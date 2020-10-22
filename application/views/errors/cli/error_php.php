@@ -12,7 +12,7 @@ Line Number: <?php echo $line; ?>
 Backtrace:
 <?php	foreach (debug_backtrace() as $error): ?>
 <?php		if (isset($error['file']) && strpos($error['file'], realpath(BASEPATH)) !== 0): ?>
-	File: <?php echo $error['file'], "\n"; ?>
+	File: <?php echo html_escape($error['file'], "\n"); ?>
 	Line: <?php echo $error['line'], "\n"; ?>
 	Function: <?php echo $error['function'], "\n\n"; ?>
 <?php		endif ?>

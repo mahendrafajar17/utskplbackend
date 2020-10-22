@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 
 echo "\nDatabase error: ",
-	$heading,
+	html_escape($heading),
 	"\n\n",
 	$message,
 	"\n\n";
