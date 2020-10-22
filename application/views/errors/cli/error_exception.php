@@ -2,10 +2,10 @@
 
 An uncaught Exception was encountered
 
-Type:        <?php echo get_class($exception), "\n"; ?>
-Message:     <?php echo html_escape($message, "\n"); ?>
-Filename:    <?php echo $exception->getFile(), "\n"; ?>
-Line Number: <?php echo $exception->getLine(); ?>
+Type:        <?php echo htmlspecialchars(get_class($exception), "\n"); ?>
+Message:     <?php echo htmlspecialchars($message, "\n"); ?>
+Filename:    <?php echo htmlspecialchars($exception->getFile(), "\n"); ?>
+Line Number: <?php echo htmlspecialchars($exception->getLine()); ?>
 
 <?php if (defined('SHOW_DEBUG_BACKTRACE') && SHOW_DEBUG_BACKTRACE === TRUE): ?>
 
