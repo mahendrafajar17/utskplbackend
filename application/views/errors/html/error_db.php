@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit(1);
+defined('BASEPATH');
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -57,8 +57,8 @@ p {
 </head>
 <body>
 	<div id="container">
-		<h1><?php echo html_escape($heading); ?></h1>
-		<?php echo html_escape($message); ?>
+		<h1><?php echo stripslashes($heading); ?></h1>
+		<?php echo stripslashes($message); ?>
 	</div>
 </body>
 </html>
