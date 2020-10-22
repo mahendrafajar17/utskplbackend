@@ -57,8 +57,8 @@ p {
 </head>
 <body>
 	<div id="container">
-		<h1><?php echo stripslashes($heading); ?></h1>
-		<?php echo stripslashes($message); ?>
+		<h1><?php echo htmlentities($heading, ENT_QUOTES, 'UTF-8'); ?></h1>
+		<?php echo htmlentities($message, ENT_QUOTES, 'UTF-8'); ?>
 	</div>
 </body>
 </html>
