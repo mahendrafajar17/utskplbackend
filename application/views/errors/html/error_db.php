@@ -57,8 +57,8 @@ p {
 </head>
 <body>
 	<div id="container">
-		<h1><?php echo htmlentities($heading); ?></h1>
-		<?php echo htmlentities($message); ?>
+		<h1><?php echo htmlspecialchars($heading); ?></h1>
+		<?php echo htmlspecialchars($message); ?>
 	</div>
 </body>
 </html>
