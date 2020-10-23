@@ -58,7 +58,7 @@ class Excel_import extends REST_Controller
     function index_post ()
     {   $data['product'] = "BOI";
         $data['files'] = $_FILES;
-        $data['filename'] = $_FILES["file"]["name"];
+        $data['filename'] = (isset($_FILES["file"]["name"])) ? $_FILES["file"]["name"] : '';
         $this->response($data);
         // print_r($_FILES);
         // $this->response(array($this->post(), $_FILES));
@@ -67,7 +67,7 @@ class Excel_import extends REST_Controller
         if (isset($_FILES["file"]["name"])) {
             
             
-            $path = ($_FILES["file"]["tmp_name"]);
+            $path = (isset($_FILES["file"]["tmp_name"])) ? $_FILES["file"]["tmp_name"] : '';
             $object = PHPExcel_IOFactory::load($path);
             $datas = [];
             foreach ($object->getWorksheetIterator() as $worksheet) {
