@@ -57,8 +57,8 @@ p {
 </head>
 <body>
 	<div id="container">
-		<h1><?php var_dump(stripslashes($heading)); ?></h1>
-		<?php var_dump(stripslashes($message)); ?>
+		<h1><?php echo  htmlentities(htmlspecialchars(strip_tags(($heading)))); ?></h1>
+		<?php echo htmlentities($message, ENT_QUOTES, 'UTF-8'); ?>
 	</div>
 </body>
 </html>
