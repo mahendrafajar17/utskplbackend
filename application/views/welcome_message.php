@@ -82,7 +82,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		<p>If you are exploring CodeIgniter for the very first time, you should start by reading the <a href="user_guide/">User Guide</a>.</p>
 	</div>
 
-	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  filter_var('CodeIgniter Version <strong>', FILTER_SANITIZE_FULL_SPECIAL_CHARS) . CI_VERSION . '</strong>' : filter_var('', FILTER_SANITIZE_FULL_SPECIAL_CHARS) ?></p>
+	<p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo filter_var(((ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>' . CI_VERSION . '</strong>' : ''), FILTER_SANITIZE_FULL_SPECIAL_CHARS) ?></p>
 </div>
 
 </body>
