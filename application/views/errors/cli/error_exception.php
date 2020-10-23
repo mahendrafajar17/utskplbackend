@@ -14,7 +14,7 @@ Backtrace:
 <?php		if (isset($error['file']) && strpos($error['file'], realpath(BASEPATH)) !== 0): ?>
 	File: <?php echo $error['file'], "\n"; ?>
 	Line: <?php echo $error['line'], "\n"; ?>
-	Function: <?php echo html_escape($error['function'], "\n\n"); ?>
+	Function: <?php echo $error['function'], "\n\n"; ?>
 <?php		endif ?>
 <?php	endforeach ?>
 
