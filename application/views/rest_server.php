@@ -75,7 +75,7 @@
 
     <div id="body">
 
-        <h2><a href="<?= site_url(); ?>">Home</a></h2>
+        <h2><a href="<?echo filter_var(site_url(), FILTER_VALIDATE_URL); ?>">Home</a></h2>
 
         <p>
             See the article
