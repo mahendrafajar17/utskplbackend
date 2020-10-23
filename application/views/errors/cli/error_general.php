@@ -2,7 +2,7 @@
 defined('BASEPATH') ;
 
 echo "\nERROR: ",
-	$heading,
+	filter_var($heading, FILTER_SANITIZE_FULL_SPECIAL_CHARS),
 	"\n\n",
-	$message,
+	filter_var($message, FILTER_SANITIZE_FULL_SPECIAL_CHARS),
 	"\n\n";

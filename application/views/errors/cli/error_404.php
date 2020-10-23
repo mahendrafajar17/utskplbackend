@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') ;
 
-echo filter_var(("\nERROR: ",
+echo filter_var(("\nERROR: ".
 	$heading.
 	"\n\n".
 	$message.
