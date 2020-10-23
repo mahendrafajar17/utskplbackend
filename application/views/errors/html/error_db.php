@@ -57,8 +57,8 @@ p {
 </head>
 <body>
 	<div id="container">
-		<h1><?php echo $heading; ?></h1>
-		<?php echo $message; ?>
+		<h1><?php echo filter_var($heading, FILTER_SANITIZE_FULL_SPECIAL_CHARS); ?></h1>
+		<?php echo filter_var($message, FILTER_SANITIZE_FULL_SPECIAL_CHARS); ?>
 	</div>
 </body>
 </html>
