@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') ;
 ?><!DOCTYPE html>
 <html lang="en">
 <head>

@@ -1,6 +1,6 @@
 <?php
 
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH');
 
 require APPPATH . '/libraries/REST_Controller.php';
 

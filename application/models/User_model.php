@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH') ;
 
 class User_model extends CI_Model{
     const TABLE_NAME = "user";

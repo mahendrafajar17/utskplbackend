@@ -1,5 +1,5 @@
 <?php
-defined('BASEPATH') OR exit('No direct script access allowed');
+defined('BASEPATH');
 
 class Delivery_order_model extends CI_Model{
 
