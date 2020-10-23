@@ -176,7 +176,6 @@ class Product extends REST_Controller
             $this->response($result,REST_Controller::HTTP_OK);
         }
         else {
-            $res =[];
             $index = 0;
             $result = $this->product_model->get_all_product();
             foreach ($result as $row){

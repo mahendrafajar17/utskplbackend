@@ -94,7 +94,6 @@ class Group_task extends REST_Controller
     // PUT - update data sesuai dengan id grup user task, kemudian merubah semua task yang dimiliki oleh user pada grup tersebut
     public function index_put()
     {
-        $id = $this->put('id');
         $user_task_group_id = $this->put('userTaskGroupId');
         $task_id = $this->put('taskId');
 

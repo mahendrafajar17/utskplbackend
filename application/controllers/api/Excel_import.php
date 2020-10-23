@@ -31,7 +31,6 @@ class Excel_import extends REST_Controller
     function fetch()
     {
         $data = $this->excel_import_model->select();
-        $output = $data->num_rows();
         $res = array();
 
         foreach ($data->result() as $row) {
@@ -72,7 +71,6 @@ class Excel_import extends REST_Controller
             $datas = [];
             foreach ($object->getWorksheetIterator() as $worksheet) {
                 $highestRow = $worksheet->getHighestRow();
-                $highestColumn = $worksheet->getHighestColumn();
                 for ($row = 2; $row < $highestRow; $row++) {
                     $product_code = $worksheet->getCellByColumnAndRow(1, $row)->getValue();
                     $product_name = $worksheet->getCellByColumnAndRow(2, $row)->getValue();

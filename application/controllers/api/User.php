@@ -200,7 +200,6 @@ class User extends REST_Controller
             }
 
             $datas = array();
-            $update_user_task = 0;
             if (isset($user_task_group_id)) {
                 if ($this->user_task_group_model->is_not_exists($user_task_group_id)) {
                     $this->response(

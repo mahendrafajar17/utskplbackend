@@ -7,7 +7,7 @@ class product_stock_opname_model extends CI_Model
 
     public function insert_product_stock_opname($opname_id, $product_id, $inspector_id, $real_stock, $opname_stock, $opname_date, $status, $description, $checked)
     {
-        $result = $this->db->insert($this::TABLE_NAME, array(
+        $this->db->insert($this::TABLE_NAME, array(
            'opname_id' => $opname_id,
            'product_id' => $product_id,
            'inspector_id' => $inspector_id,

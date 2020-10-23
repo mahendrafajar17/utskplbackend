@@ -112,7 +112,7 @@
 
     </div>
 
-    <p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo  (ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>'.CI_VERSION.'</strong>') : '') ?></p>
+    <p class="footer">Page rendered in <strong>{elapsed_time}</strong> seconds. <?php echo filter_var(((ENVIRONMENT === 'development') ?  'CodeIgniter Version <strong>'.CI_VERSION.'</strong>' : ''), FILTER_SANITIZE_FULL_SPECIAL_CHARS) ?></p>
 </div>
 
 <script src="https://code.jquery.com/jquery-1.12.0.js"></script>

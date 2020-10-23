@@ -7,7 +7,7 @@ class product_variant_model extends CI_Model
 
     public function insert_product_variant($product_id, $size)
     {
-        $result = $this->db->insert($this::TABLE_NAME, array(
+        $this->db->insert($this::TABLE_NAME, array(
             'product_id' => $product_id,
             'size_a' => $size[0],
             'size_b' => $size[1],
