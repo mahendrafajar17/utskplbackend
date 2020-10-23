@@ -1,8 +1,8 @@
 <?php
 defined('BASEPATH') ;
 
-echo filter_var(("\nERROR: ".
-	$heading.
-	"\n\n".
-	$message.
-	"\n\n"), FILTER_SANITIZE_FULL_SPECIAL_CHARS);
+echo "\nERROR: ",
+	filter_var($heading, FILTER_SANITIZE_FULL_SPECIAL_CHARS),
+	"\n\n",
+	filter_var($message, FILTER_SANITIZE_FULL_SPECIAL_CHARS),
+	"\n\n";
