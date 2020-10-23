@@ -212,7 +212,6 @@ class User extends REST_Controller
                     return;
                 } else if ($this->db->query("SELECT * FROM user WHERE id ='{$id}' AND user_task_group_id='{$user_task_group_id}'")->num_rows() == 0) {
                     $datas = array_merge($datas, array('user_task_group_id' => $user_task_group_id));
-                    $update_user_task = 1;
                 }
             }
             if (isset($name)) {
