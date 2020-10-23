@@ -75,7 +75,7 @@
 
     <div id="body">
 
-        <h2><a href="<?php echo site_url(); ?>">Home</a></h2>
+        <h2><a href="<?= site_url(); ?>">Home</a></h2>
 
         <p>
             See the article
